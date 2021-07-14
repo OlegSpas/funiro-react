@@ -1,0 +1,132 @@
+.popup {
+	position: absolute;
+	height: 100vh;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+
+	background-color: #00000061;
+	display: flex;
+	z-index: 99;
+
+
+}
+
+.popupContent {
+	width: 600px;
+	height: 400px;
+	background-color: white;
+	margin: auto;
+	border: 0 solid;
+	border-radius: 5px;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+
+
+
+.popupPagination {
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+}
+
+.popupPagination .paginationButton{
+	margin-top: 5%;
+    text-decoration: none;
+    font-family: 'Gilroy SemiBold';
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0em;
+    color: #fff;
+	height: 40px;
+	width: 130px;
+	text-align: center;
+    background-color: #E89F71;
+    border: 1px solid #e89f71;
+    transition-delay: .2s;
+    transition: all .2s ease-in;
+}
+.popupPagination .paginationButton:hover{
+	transition: all .2s ease-out;
+	transition-delay: .15s;
+	color: #e89f71;
+	background-color: #fff;
+	border-radius: 15px;
+}
+
+.popupTextname,
+.popupTextDetails,
+.popupTextPrice,
+.popupTextOldPrice{
+	font-family: 'Gilroy SemiBold';
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #e89f71;
+    border: 0;
+    border-left: 2px solid #e89f71;
+    outline: none;
+    height: 30px;
+    width: 200px;
+    padding: 5px;
+    background-color: #ecececad;
+    resize: none;
+    margin:0 3% 3% 3%;
+}
+
+
+.popupTitle h3{
+	font-family: 'Gilroy SemiBold';
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #616161;
+}
+
+.areaPopup{
+	padding: 0 10%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.areaPopup label{
+	font-family: 'Gilroy SemiBold';
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #3a3a3a;
+}
+
+/* Delete POPUP */
+
+.deletePopup{
+	position: absolute;
+	height: 100vh;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+
+	background-color: #00000061;
+	display: flex;
+	z-index: 99;
+}
+
+.confirmationPopup {
+	width: 400px;
+	height: 150px;
+	background-color: white;
+	margin: auto;
+	border: 0 solid;
+	border-radius: 5px;
+	padding: 10px;
+	text-align: center;
+}

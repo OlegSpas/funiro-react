@@ -1,0 +1,10 @@
+.productsTitle h2{
+    font-family: 'Gilroy Bold';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #3A3A3A;
+}

@@ -1,0 +1,39 @@
+
+
+
+.cardCreatorFooter {
+
+
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	left: 10%;
+	height: 50px;
+	width: 150px;
+	cursor: pointer;
+
+
+	text-decoration: none;
+    font-family: 'Gilroy SemiBold';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0em;
+	color: #fff;
+
+	
+	margin-top: 5%;
+    border-radius: 15px;
+    box-shadow: 0px 4px 14px 1px rgb(0 0 0 / 16%);
+	background-color: #e89f71;
+    padding: 5px 20px;
+}
+
+.addSVG {
+	width: 24px;
+}

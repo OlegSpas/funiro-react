@@ -1,0 +1,32 @@
+.popoverContent {
+
+    border-radius:15px;
+    box-shadow: 0px 4px 14px 1px rgb(0 0 0 / 16%);
+    height: 70px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    left: 105%;
+    top:0%;
+    z-index: 10;
+    padding: 10px;
+}
+
+.popoverContent button{
+    font-family: 'Gilroy SemiBold';
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #E89F71;
+    height:40px;
+    width: 90px;
+    border: #e89f71 1px solid;
+    margin: 3% 0;
+}
