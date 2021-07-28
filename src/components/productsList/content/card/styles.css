@@ -4,15 +4,17 @@
     cursor: pointer;
     right: 3%;
     top: 3%;
+    z-index: 20;
 }
 
 .main-card{
-    width: 23%;
-    margin:5% 5% 5%;
+    width: 230px;
+    margin:10% 5% 5%;
 }
 
 .card-product{
     position: relative;
+    transition: all .2s ease;
 }
 
 .card-img{
@@ -22,6 +24,7 @@
 
 .card-img img{
 	width: 100%;
+    height: 340px;
 }
 
 .topPrice{
@@ -37,8 +40,9 @@
 .cardContent{
     padding: 5% 0 15% 5%;
     background-color: #f4f5f7;
-    width: 95%;
+    width: 100%;
     position: relative;
+    bottom: 40px;
   
 }
 
@@ -80,4 +84,101 @@
     color: #b0b0b0;
     text-decoration: line-through;
 
+}
+
+
+
+.hiddenCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    z-index: 8;
+    padding: 60% 0%;
+    top: 0%;
+    height: 100%;
+    width: 100%;
+    background-color: #3a3a3a;
+    opacity: .7;
+    visibility: hidden;
+    transition: all .1s ease;
+}
+
+
+.mediaBtn{
+    display: flex;
+    justify-content: space-around;
+}
+
+.mediaHelpBtn{
+    text-decoration: none;
+    font-family: 'Gilroy SemiBold';
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0em;
+
+    text-align: center;
+
+    width: 75px;
+    height: 24px;
+    color: #fff;
+    background-color: inherit;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
+
+.AddToCart{
+
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    font-family: 'Gilroy SemiBold';
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0em;
+
+    color: #e89f71;
+    background-color: #ffffff;
+    border: 0;
+    outline: none;
+
+    width: 150px;
+    height: 40px;
+
+    margin-bottom: 10%;
+
+    cursor: pointer;
+
+    transition: all .2s ease-out;
+    }
+
+.AddToCart:hover{
+    background-color: #e89f71;
+    color: #ffffff;
+    transition-delay: .2s;
+}
+
+
+.card-product:hover > .hiddenCard{
+    animation: poyava 0.7s forwards;
+    visibility: visible;
+}
+@keyframes poyava {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+    }
+    100% {
+        visibility: visible;
+        opacity: .7;
+    }
 }

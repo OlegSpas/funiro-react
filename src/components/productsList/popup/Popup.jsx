@@ -24,7 +24,7 @@ class Popup extends React.Component {
 	}
 
 	handleAddCardById = () => {
-		const imageValue = document.getElementById('popupImage').value
+		const imageValue = URL.createObjectURL(document.getElementById('popupImage').files[0])
 		const nameValue = document.getElementById("popupTextName").value
 		const detailsValue = document.getElementById("popupTextDetails").value
 		const priceValue = document.getElementById("popupTextPrice").value
@@ -68,7 +68,7 @@ class Popup extends React.Component {
 							<textarea oldPriceValue={this.state.oldPrice} onChange={this.handleOnTextChange} placeholder="Select Price "id="popupTextOldPrice" className="popupTextOldPrice" />
 						</div>
 						<div class="areaPopup">
-							<label htmlFor="popupImage">Select oldPrice</label>
+							<label htmlFor="popupImage">Select photo(1)</label>
 							<input imageValue={this.state.image} onChange={this.handleOnTextChange} type="file" placeholder="Select Image "id="popupImage" className="popupImage" />
 						</div>
 					</div>

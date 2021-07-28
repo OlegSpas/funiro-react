@@ -2,6 +2,7 @@ import React from 'react';
 import CardPopover from '../../popover/cardPopover';
 import Popup from '../../popup/Popup';
 import ConfirmationCardPopup from '../../popup/ConfirmationCardPopup';
+import {Link} from 'react-router-dom';
 import { WriteCard } from '../../../../data/dataWorker';
 
 import './styles.css';
@@ -108,13 +109,14 @@ export default class Card extends React.Component<IProps, IState> {
 							<svg onClick={this.handleOpenCardPopover} className="imgMenu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M6 12c0 1.657-1.343 3-3 3s-3-1.343-3-3 1.343-3 3-3 3 1.343 3 3zm9 0c0 1.657-1.343 3-3 3s-3-1.343-3-3 1.343-3 3-3 3 1.343 3 3zm9 0c0 1.657-1.343 3-3 3s-3-1.343-3-3 1.343-3 3-3 3 1.343 3 3z"/></svg>
 							{ this.state.isOpenCardPopover && <CardPopover close={this.handleCloseCardPopover} delete={this.handleOpenDeleteCardPopup} edit={this.handleOpenEditCardPopup} /> }
 						</div>
-						{image}
+						<img src={image}  />
+				
 					</div>
 					
 					<div className="cardContent">
-					<div className="card-name">
+						<div className="card-name">
 							{name}
-					</div>
+						</div>
 
 						<div className="cardDetails">
 								{details}
@@ -129,13 +131,30 @@ export default class Card extends React.Component<IProps, IState> {
 							</div>
 						</div>
 					
-					{/* { this.state.isOpenPopup && <Popup close={this.handleClosePopup} addNewCard={this.addNewCard} /> } */}
+					<div className="hiddenCard">
+						<div className="cartBtn">
+						<Link to={{ pathname: '/product',
+									state: {name:{name}}}}>
+								<button className="AddToCart">
+									Add to cart
+								</button>
+							</Link>
+						</div>
+						<div className="mediaBtn">
+							<button className="mediaHelpBtn">Share</button>
+							<button className="mediaHelpBtn">Like</button>
+						</div>
+					</div>
+					
 		
 				
 				</div>
+
 				{ this.state.isOpenEditCardPopup && <Popup name={this.props.name} close={this.handleCloseEditCardPopup} addNewCard={this.handleEditCard} />}	
 				{ this.state.isOpenDeleteCardPopup && <ConfirmationCardPopup close={this.handleCloseDeleteCardPopup} ok={this.handleConfirmCard} text={"Are you shure to delete this card?"} />}
 			</div>
 		)
 	}
 }
+
+

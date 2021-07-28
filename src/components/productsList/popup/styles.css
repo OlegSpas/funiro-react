@@ -71,7 +71,7 @@
     border: 0;
     border-left: 2px solid #e89f71;
     outline: none;
-    height: 30px;
+    height: 40px;
     width: 200px;
     padding: 5px;
     background-color: #ecececad;
@@ -130,3 +130,4 @@
 	padding: 10px;
 	text-align: center;
 }
+

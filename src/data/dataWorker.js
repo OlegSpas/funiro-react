@@ -22,6 +22,7 @@ export function ReadData() {
     return { 
         cards: [
             { 
+                image:"https://olegspas.github.io/FuniroProject2.0/products-landing/product-img/tables/stable6.png",
                 name:"Syltherine", 
                 details:"Stylish cafe chair",
                 price:"Rp. 2.500.000",

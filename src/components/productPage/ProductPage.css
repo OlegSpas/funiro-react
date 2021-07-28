@@ -1,0 +1,119 @@
+
+
+.btnBack{
+    margin-top: 5%;
+    text-decoration: none;
+    font-family: 'Gilroy SemiBold';
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0em;
+    color: #fff;
+    height: 40px;
+    width: 130px;
+    text-align: center;
+    background-color: #E89F71;
+    border: 1px solid #e89f71;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.pageContent{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.productImage img{
+    width: 350px;
+    height: 400px;
+    border-radius: 25px;
+}
+
+.productAbout{
+    height: 300px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: start;
+}
+
+.productPrice{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5%;
+    width: 400px;
+}
+
+.productDetails h2{
+    font-family: 'Gilroy Medium';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 46px;
+    letter-spacing: .03em;
+    text-align: left;
+    margin-bottom: 1%;
+}
+
+.productDetails h3{
+    font-family: 'Gilroy Medium';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #898989;
+}
+
+.productPrice h4{
+    font-family: 'Gilroy SemiBold';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.buyBtn{
+    text-decoration: none;
+    font-family: 'Gilroy SemiBold';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #ffffff;
+    background-color: #e89f71;
+    border: 1px solid #e89f81;
+    height: 60px;
+    width: 200px;
+
+    cursor: pointer;
+}
+
+.pageFooter{
+    margin-top: 7%;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.discribeProduct{
+    width: 600px;
+
+    font-family: 'Gilroy Medium';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    color: #616161;
+}
