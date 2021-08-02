@@ -109,7 +109,7 @@ export default class Card extends React.Component<IProps, IState> {
 							<svg onClick={this.handleOpenCardPopover} className="imgMenu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M6 12c0 1.657-1.343 3-3 3s-3-1.343-3-3 1.343-3 3-3 3 1.343 3 3zm9 0c0 1.657-1.343 3-3 3s-3-1.343-3-3 1.343-3 3-3 3 1.343 3 3zm9 0c0 1.657-1.343 3-3 3s-3-1.343-3-3 1.343-3 3-3 3 1.343 3 3z"/></svg>
 							{ this.state.isOpenCardPopover && <CardPopover close={this.handleCloseCardPopover} delete={this.handleOpenDeleteCardPopup} edit={this.handleOpenEditCardPopup} /> }
 						</div>
-						<img src={image}  />
+						<img src={image}  alt="image"/>
 				
 					</div>
 					
@@ -133,8 +133,8 @@ export default class Card extends React.Component<IProps, IState> {
 					
 					<div className="hiddenCard">
 						<div className="cartBtn">
-						<Link to={{ pathname: '/product',
-									state: {name:{name}}}}>
+							<Link to={{pathname:`/product/${name}`, 
+								  state:{name:name, details:details, price:price, image:image}}}>
 								<button className="AddToCart">
 									Add to cart
 								</button>

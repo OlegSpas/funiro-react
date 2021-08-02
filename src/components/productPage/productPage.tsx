@@ -3,17 +3,21 @@ import './ProductPage.css';
 import {Link, RouteComponentProps} from 'react-router-dom';
 
 
-type props = RouteComponentProps & {
+type props =  RouteComponentProps
 
-
-}
 
 interface IState{
 
 }
 export default class ProductPage extends React.Component<props, IState> {
 
+    constructor(props:props){
+		super(props);
 
+		this.state = {
+
+		}
+	}
 
 
 	render(){
@@ -30,15 +34,15 @@ export default class ProductPage extends React.Component<props, IState> {
                     </header>
                     <main className="pageContent">
                         <div className="productImage">
-                            <img src="https://olegspas.github.io/FuniroProject2.0/products-landing/product-img/tables/stable6.png" alt="Product Image" />
+                            <img src={(this.props.location.state as any).image} alt="Product Image" />
                         </div>
                         <div className="productAbout">
                             <div className="productDetails">
-                                {(this.props.location.state as any).name}
-                                <h3>Stylish table</h3>
+                                <h2>{(this.props.location.state as any).name}</h2>
+                                <h3>{(this.props.location.state as any).details}</h3>
                             </div>
                             <div className="productPrice">
-                                <h4>RP.150.000</h4>
+                                <h4>{(this.props.location.state as any).price}</h4>
                                 <button className="buyBtn">
                                     Buy Now
                                 </button>

@@ -15,11 +15,10 @@ function App() {
             <Title/>
             <Content/>
           </Route>
-          <Route   path="/product"> 
-            <ProductPage/>
-          </Route>
+          <Route path="/product" component={ProductPage}/>
         </Switch>
       </Router>
+
     </div>
   );
 }
